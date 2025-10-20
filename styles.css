@@ -183,7 +183,7 @@ input:focus {
 }
 
 .cancel-btn {
-  background: var(--blue);
+  background: var(--gray);
 }
 
 .save-btn {
@@ -213,7 +213,7 @@ input:focus {
 }
 
 .confirm-cancel {
-  background: var(--blue);
+  background: var(--gray);
 }
 
 .confirm-cancel:hover {
