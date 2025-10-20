@@ -139,7 +139,7 @@ function saveCard(event) {
   
   if (isEditing) {
     // Update existing card
-    const cardIndex = card.findIndex(c => c.id === currentCardId);
+    const cardIndex = cards.findIndex(c => c.id === currentCardId);
     if (cardIndex !== -1) {
       cards[cardIndex].title = title;
     }
