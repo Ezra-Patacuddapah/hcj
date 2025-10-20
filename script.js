@@ -1,9 +1,9 @@
 // Sample initial card
 let cards = [
-  {
-    id: 1,
-    title: 'Sample text'
-  }
+//   {
+//     id: 1,
+//     title: 'Sample text'
+//   }
 ]
 
 // DOM Elements
