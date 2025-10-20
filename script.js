@@ -48,6 +48,11 @@ function renderCards() {
   })
 }
 
+// Autofocus to the add button
+function autoFocus() {
+    addCardBtn.setAttribute('autofocus')
+}
+
 // Create a card element
 function createCardElement(card) {
   const cardDiv = document.createElement('div')
@@ -124,6 +129,7 @@ function saveCard(event) {
   
   renderCards();
   closeModal();
+  autoFocus();
 }
 
 // Delete card
@@ -131,15 +137,18 @@ function deleteCard() {
   cards = cards.filter(card => card.id !== currentCardId);
   renderCards();
   closeConfirmModal();
+  autoFocus();
 }
 
 // Close modals
 function closeModal() {
   cardModal.style.display = 'none';
+  autoFocus();
 }
 
 function closeConfirmModal() {
   confirmModal.style.display = 'none';
+  autoFocus();
 }
 
 // Set up event listeners
