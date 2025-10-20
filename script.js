@@ -64,6 +64,8 @@ function init() {
 
 // Render all cards
 function renderCards() {
+    cardsContainer.innerHTML = '';
+    
   if (cards.length === 0) {
     emptyState.style.display = 'block'
     return
