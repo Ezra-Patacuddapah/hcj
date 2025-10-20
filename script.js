@@ -2,39 +2,7 @@
 let cards = [
   {
     id: 1,
-    title: 'Sample data'
-  },
-  {
-    id: 2,
-    title: 'Another sample data'
-  },
-  {
-    id: 3,
-    title: 'Another sample data, Another sample data, Another sample data'
-  },
-  {
-    id: 4,
-    title: 'Another sample data'
-  },
-  {
-    id: 5,
-    title: 'Another sample data'
-  },
-  {
-    id: 6,
-    title: 'Another sample data'
-  },
-  {
-    id: 7,
-    title: 'Another sample data'
-  },
-  {
-    id: 8,
-    title: 'Another sample data'
-  },
-  {
-    id: 9,
-    title: 'Another sample data'
+    title: 'Sample text'
   }
 ]
 
@@ -65,7 +33,7 @@ function init() {
 // Render all cards
 function renderCards() {
     cardsContainer.innerHTML = '';
-    
+
   if (cards.length === 0) {
     emptyState.style.display = 'block'
     return
