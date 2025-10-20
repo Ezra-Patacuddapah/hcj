@@ -1,48 +1,54 @@
-<div class="container">
-  <div class="cards-container" id="cardsContainer">
-    <!-- Cards will be dynamically added here -->
-    <div class="empty-state" id="emptyState">
-      
-    </div>
-  </div>
-</div>
-
-<!-- Sticky Create Button -->
-<button class="sticky-add-btn" id="addCardBtn">
-  +
-</button>
-
-<!-- Add/Edit Card Modal -->
-<div class="modal" id="cardModal">
-  <div class="modal-content">
-    <form id="cardForm">
-      <div class="form-group">
-        <input type="text" id="cardTitle">
-      </div>
-      <div class="modal-actions">
-        <button type="button" class="cancel-btn" id="cancelBtn">
-          &larr;
-        </button>
-        <button type="submit" class="save-btn">
-          &rarr;
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- Delete Confirmation Modal -->
-<div class="modal confirm-modal" id="confirmModal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <div class="confirm-actions">
-        <button class="confirm-btn confirm-cancel" id="cancelDeleteBtn">
-          &larr;
-        </button>
-        <button class="confirm-btn confirm-delete" id="confirmDeleteBtn">
-          &rarr;
-        </button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCJ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards-container" id="cardsContainer">
+        <!-- Cards will be dynamically added here -->
+        <div class="empty-state" id="emptyState"></div>
       </div>
     </div>
-  </div>
-</div>
+
+    <!-- Sticky Create Button -->
+    <button class="sticky-add-btn" id="addCardBtn">+</button>
+
+    <!-- Add/Edit Card Modal -->
+    <div class="modal" id="cardModal">
+      <div class="modal-content">
+        <form id="cardForm">
+          <div class="form-group">
+            <input type="text" id="cardTitle" />
+          </div>
+          <div class="modal-actions">
+            <button type="button" class="cancel-btn" id="cancelBtn">
+              &larr;
+            </button>
+            <button type="submit" class="save-btn">&rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal confirm-modal" id="confirmModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="confirm-actions">
+            <button class="confirm-btn confirm-cancel" id="cancelDeleteBtn">
+              &larr;
+            </button>
+            <button class="confirm-btn confirm-delete" id="confirmDeleteBtn">
+              &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
