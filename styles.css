@@ -244,7 +244,7 @@ input:focus {
 }
 
 @media (max-width: 480px) {
-  .sticy-add-btn {
+  .sticky-add-btn {
     bottom: 15px;
     right: 15px;
     width: 50px;
@@ -254,5 +254,10 @@ input:focus {
   
   .cards-container {
     grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 30%;
   }
 }
