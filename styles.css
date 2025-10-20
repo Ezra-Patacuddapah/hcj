@@ -41,6 +41,7 @@ container {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
 .sticky-add-btn:hover {
